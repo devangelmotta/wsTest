@@ -10,7 +10,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build
 
 # Build the image as production
 # So we can minimize the size
